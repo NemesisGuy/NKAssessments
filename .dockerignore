@@ -1,0 +1,9 @@
+.git
+.gitignore
+Dockerfile
+README.md
+spec.md
+content.md
+*.ps1
+*.cmd
+*.bat
