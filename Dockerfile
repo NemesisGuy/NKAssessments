@@ -11,8 +11,8 @@ WORKDIR /usr/share/nginx/html
 # Install curl for container healthchecks
 RUN apk add --no-cache curl
 
-# Copy the entire static bundle (see .dockerignore for exclusions)
-COPY . /usr/share/nginx/html
+# Copy the public static bundle (see .dockerignore for exclusions)
+COPY public/ /usr/share/nginx/html
 
 EXPOSE 80
 

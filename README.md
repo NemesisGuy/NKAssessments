@@ -16,29 +16,32 @@ Single-page Bootstrap 5 website for Naadirah Kagee (psychometrist) featuring her
 
 ```
 NKAssessments/
-├── index.html              # Main single-page site
-├── assets/
-│   ├── css/styles.css      # Custom theme + component overrides
-│   ├── js/main.js          # Theme toggle, form handler, nav helpers
-│   └── images/             # Place profile + hero imagery here
-├── README.md               # This file
-└── spec.md                 # Original requirements brief
+├── public/
+│   ├── index.html              # Main single-page site
+│   ├── site.webmanifest        # PWA + icon metadata
+│   └── assets/
+│       ├── css/styles.css      # Custom theme + component overrides
+│       ├── js/main.js          # Theme toggle, form handler, nav helpers
+│       └── images/             # Optimized hero, portrait, favicon files
+├── Dockerfile                  # Nginx runtime definition
+├── README.md                   # This file
+└── spec.md                     # Original requirements brief
 ```
 
 ## Getting Started
 
-1. Open `index.html` directly in a browser or serve with any static server.
+1. Open `public/index.html` directly in a browser or serve the `public/` folder with any static server.
 2. Update placeholder assets:
-   - Favicon files: `favicon-32x32.png`, `favicon-16x16.png`, `apple-touch-icon.png`
-   - Hero/About images under `assets/images/`
-   - Open Graph image `link-to-og-image.png` in `<head>`
+   - Favicon files: `public/assets/images/favicon-32x32.png`, `favicon-16x16.png`, `apple-touch-icon.png`
+   - Hero/About images under `public/assets/images/`
+   - Social share image `public/assets/images/nk-share-1200.jpg` in `<head>`
 3. Replace contact links (WhatsApp number, LinkedIn URL) with verified details.
 4. If you have an email provider/Formspree endpoint, hook it into `#contactForm`.
 
 ### Recommended Static Server (optional)
 
 ```powershell
-cd c:\Users\Reign\Projects\NKAssessments
+cd c:\Users\Reign\Projects\NKAssessments\public
 python -m http.server 8000
 ```
 
@@ -69,7 +72,7 @@ Use `--no-cache` for reproducible builds before pushing, and keep the `latest` t
 
 ## Customization Notes
 
-- Adjust palettes in `assets/css/styles.css` via CSS custom properties.
+- Adjust palettes in `public/assets/css/styles.css` via CSS custom properties.
 - Update structured data (JSON-LD) in `index.html` with final URLs and imagery.
 - Add testimonials or analytics scripts in the designated optional sections when content is ready.
 
