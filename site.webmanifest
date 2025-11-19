@@ -1,0 +1,31 @@
+{
+  "name": "NK Assessments",
+  "short_name": "NK Assess",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f9f7",
+  "theme_color": "#2f6c6d",
+  "description": "NK Assessments | HPCSA registered psychometrist in Cape Town offering psychometric assessments, career guidance, and recruitment selection.",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/nk-logo-512.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/nk-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
